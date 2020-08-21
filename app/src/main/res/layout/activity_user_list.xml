@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".view.ui.UserListActivity">
+
+    <LinearLayout style="@style/headerll">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:lineSpacingExtra="10sp"
+            android:text="@string/lbl_user_list"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvUsers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fabAddUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:contentDescription="@string/btn_add_user"
+        android:drawableTint="@color/color_white"
+        android:text="@string/btn_add_user"
+        android:textColor="@color/color_white"
+        app:cornerRadius="4dp"
+        app:icon="@drawable/icn_add_user" />
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Practical</string>
+
+    //labels
+    <string name="lbl_app_title">Practical</string>
+    <string name="lbl_dob">Date of Birth</string>
+    <string name="lbl_gender">Gender</string>
+    <string name="lbl_date">%s/%s/%d</string>
+
+    //buttons
+    <string name="btn_add_user">Add user</string>
+    <string name="lbl_form_title">User Details</string>
+    <string name="lbl_user_list">User List</string>
+
+
+    //hints
+    <string name="hint_user_name">User Name</string>
+    <string name="hint_user_dob">dd/mm/yyyy</string>
+    <string name="hint_phone">Phone</string>
+    <string name="hint_email">Email</string>
+    <string name="btn_submit">Submit</string>
+    <string name="lbl_male">Male</string>
+    <string name="lbl_female">Female</string>
+    <string name="btn_camera">Camera</string>
+    <string name="btn_gallery">Gallery</string>
+    <string name="btn_save">Save</string>
+
+
+    //errors
+    <string name="error_empty_name">Please enter name</string>
+    <string name="error_invalid_dob">Please enter valid date of birth</string>
+    <string name="error_invalid_phone">Invalid Phone number</string>
+    <string name="error_invalid_email">Please enter email</string>
+    <string name="lbl_choose">Choose</string>
+    <string name="error_invalid_upload_photo">Please upload a photo</string>
+    <string name="error_general_toast_msg">error occurred</string>
+    <string name="error_upload_photos_limit">You can not upload photos more than 5</string>
+    <string name="error_toast_imge_capture">Please check SD card! Image shot is impossible!</string>
+
+</resources>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout style="@style/headerll">
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:lineSpacingExtra="10sp"
+                android:text="@string/lbl_form_title"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/ivEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/icn_edit"
+                android:tint="@color/colorPrimaryDark"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:background="@null"
+                android:text="@string/btn_save"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editUserName"
+            style="@style/addUserEditText"
+            android:layout_marginTop="5dp"
+            android:hint="@string/hint_user_name" />
+
+        <LinearLayout
+            style="@style/addUserll"
+            android:orientation="horizontal"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:text="@string/lbl_dob"
+                    android:textColor="@color/color_grey"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/editUserDOB"
+                    style="@style/addUserEditText"
+                    android:layout_marginTop="0dp"
+                    android:enabled="false"
+                    android:hint="@string/hint_user_dob" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivCalendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/icn_calendar"
+                android:tint="@color/color_black" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            style="@style/addUserll"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/lbl_gender"
+                android:textColor="@color/color_grey"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/rgGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/lbl_male"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/rbFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="@string/lbl_female"
+                    android:textSize="14dp" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editUserPhone"
+            style="@style/addUserEditText"
+            android:layout_marginTop="0dp"
+            android:hint="@string/hint_phone"
+            android:inputType="number"
+            android:maxLength="10"
+            android:maxEms="10" />
+
+        <EditText
+            android:id="@+id/editUserEmail"
+            style="@style/addUserEditText"
+            android:hint="@string/hint_email"
+            android:inputType="textEmailAddress" />
+
+        <LinearLayout
+            style="@style/addUserll"
+            android:background="@color/color_light_grey"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvPhotos"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnCamera"
+                    style="@style/addUserUploadBtn"
+                    android:text="@string/btn_camera"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/btnGallery"
+                    style="@style/addUserUploadBtn"
+                    android:text="@string/btn_gallery"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--<Button-->
+        <!--android:id="@+id/btnSubmit"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:paddingLeft="38dp"-->
+        <!--android:paddingTop="14dp"-->
+        <!--android:paddingRight="38dp"-->
+        <!--android:paddingBottom="14dp"-->
+        <!--android:text="@string/btn_submit"-->
+        <!--android:textColor="@color/color_white"-->
+        <!--android:textSize="18sp" />-->
+    </LinearLayout>
+
+</ScrollView>
